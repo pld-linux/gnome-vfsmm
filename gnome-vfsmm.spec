@@ -2,13 +2,13 @@ Summary:	C++ wrappers for gnome-vfs
 Summary(pl):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
 Version:	2.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.5/%{name}-%{version}.tar.bz2
 # Source0-md5:	bdedd119b50a5e1b1ef0957a5c7bb995
 URL:		http://www.gnome.org/
-BuildRequires:	glibmm-devel >= 2.3.1
+BuildRequires:	glibmm-devel >= 2.3.3
 BuildRequires:	gnome-vfs2-devel >= 2.5.0
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -24,7 +24,7 @@ Summary:	Devel files for gnome-vfsmm
 Summary(pl):	Pliki nag³ówkowe dla gnome-vfsmm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
-Requires:	glibmm-devel >= 2.3.1
+Requires:	glibmm-devel >= 2.3.3
 Requires:	gnome-vfs2-devel >= 2.5.0
 
 %description devel
