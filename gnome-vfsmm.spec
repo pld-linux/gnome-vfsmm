@@ -1,15 +1,15 @@
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
-Version:	1.3.2
+Version:	1.3.3
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	160abed103338832490e6519091adf69
+# Source0-md5:	0722ecf5b7fd05205405d8fc38cd16f4
 URL:		http://www.gnome.org/
-BuildRequires:	gnome-vfs2-devel >= 2.0.0
-BuildRequires:	gtkmm-devel >= 2.0.0
+BuildRequires:	gnome-vfs2-devel >= 2.3.7
+BuildRequires:	gtkmm-devel >= 2.2.7
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
