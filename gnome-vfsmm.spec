@@ -1,7 +1,7 @@
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
-Version:	1.3.0
+Version:	1.3.1
 Release:	1
 License:	GPL
 Group:		Libraries
@@ -70,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/%{name}-2.0
-%{_includedir}/libgnomevfsmm-2.0
 %{_libdir}/libgnomevfsmm*.la
 %{_libdir}/libgnomevfsmm*.so
 %{_libdir}/%{name}-2.0
