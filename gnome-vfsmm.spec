@@ -1,15 +1,15 @@
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
-Version:	1.3.5
+Version:	2.5.0
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/1.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	4bc128acc23a4d3b6b5a5e5452764644
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.5/%{name}-%{version}.tar.bz2
+# Source0-md5:	bdedd119b50a5e1b1ef0957a5c7bb995
 URL:		http://www.gnome.org/
-BuildRequires:	gnome-vfs2-devel >= 2.4.0
-BuildRequires:	gtkmm-devel >= 2.2.8
+BuildRequires:	glibmm-devel >= 2.3.1
+BuildRequires:	gnome-vfs2-devel >= 2.5.0
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,9 +24,8 @@ Summary:	Devel files for gnome-vfsmm
 Summary(pl):	Pliki nag³ówkowe dla gnome-vfsmm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
-Requires:	gnome-vfs2-devel >= 2.4.0
-Requires:	gtkmm-devel >= 2.2.8
-Requires:	gtkmm-glib-devel >= 2.2.8
+Requires:	glibmm-devel >= 2.3.1
+Requires:	gnome-vfs2-devel >= 2.5.0
 
 %description devel
 Devel files for gnome-vfsmm.
@@ -69,15 +68,17 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_libdir}/libgnomevfsmm*.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/%{name}-2.0
+%attr(755,root,root) %{_libdir}/libgnomevfsmm*.so
 %{_libdir}/libgnomevfsmm*.la
-%{_libdir}/libgnomevfsmm*.so
+%{_includedir}/%{name}-2.*
 %{_libdir}/%{name}-2.0
-%{_pkgconfigdir}/%{name}-2.0.pc
+%{_libdir}/%{name}-2.6
+%{_pkgconfigdir}/%{name}-2.6.pc
 
 %files static
 %defattr(644,root,root,755)
