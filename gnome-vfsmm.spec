@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	glibmm-devel >= 2.6.0
 BuildRequires:	gnome-vfs2-devel >= 2.10.0
 BuildRequires:	libtool >= 2:1.4d
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
