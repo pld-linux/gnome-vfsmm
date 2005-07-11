@@ -1,12 +1,12 @@
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
-Version:	2.10.0
+Version:	2.11.1
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-vfsmm/2.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	0d5751f1c0074289c3e6a858357f9c4d
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-vfsmm/2.11/%{name}-%{version}.tar.bz2
+# Source0-md5:	c4f29ecff50dabf97ef191e7ac2ec7a3
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
