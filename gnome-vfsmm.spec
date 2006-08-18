@@ -1,20 +1,20 @@
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
-Version:	2.15.1
-Release:	2
+Version:	2.16.0
+Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-vfsmm/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	56af074955e5723baa172f83e20fae59
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-vfsmm/2.16/%{name}-%{version}.tar.bz2
+# Source0-md5:	523d7195cabaf2ecfeda9f6683f475d1
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	glibmm-devel >= 2.11.3
+BuildRequires:	glibmm-devel >= 2.12.0
 BuildRequires:	gnome-vfs2-devel >= 2.15.91
 BuildRequires:	libtool >= 2:1.4d
 BuildRequires:	pkgconfig
-Requires:	glibmm >= 2.11.3
+Requires:	glibmm >= 2.12.0
 Requires:	gnome-vfs2-libs >= 2.15.91
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +29,7 @@ Summary:	Devel files for gnome-vfsmm
 Summary(pl):	Pliki nag³ówkowe dla gnome-vfsmm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	glibmm-devel >= 2.11.3
+Requires:	glibmm-devel >= 2.12.0
 Requires:	gnome-vfs2-devel >= 2.15.91
 
 %description devel
@@ -58,7 +58,6 @@ Biblioteka statyczna gnome-vfsmm.
 %{__aclocal} -I scripts
 %{__autoconf}
 %{__automake}
-LDFLAGS="%{rpmldflags} -Wl,--as-needed"
 %configure \
 	--enable-static=yes
 
