@@ -1,5 +1,5 @@
 Summary:	C++ wrappers for gnome-vfs
-Summary(pl.UTF-8):   Interfejsy C++ dla gnome-vfs
+Summary(pl.UTF-8):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
 Version:	2.16.1
 Release:	1
@@ -26,7 +26,7 @@ Interfejsy C++ dla gnome-vfs.
 
 %package devel
 Summary:	Devel files for gnome-vfsmm
-Summary(pl.UTF-8):   Pliki nagłówkowe dla gnome-vfsmm
+Summary(pl.UTF-8):	Pliki nagłówkowe dla gnome-vfsmm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	glibmm-devel >= 2.12.3
@@ -40,7 +40,7 @@ Pliki nagłówkowe dla gnome-vfsmm.
 
 %package static
 Summary:	gnome-vfsmm static library
-Summary(pl.UTF-8):   Biblioteka statyczna gnome-vfsmm
+Summary(pl.UTF-8):	Biblioteka statyczna gnome-vfsmm
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
