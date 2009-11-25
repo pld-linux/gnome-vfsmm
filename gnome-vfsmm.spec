@@ -10,6 +10,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.24/%{name}-%{versi
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	doxygen
 BuildRequires:	glibmm-devel >= 2.14.0
 BuildRequires:	gnome-vfs2-devel >= 2.24.0
 BuildRequires:	libtool >= 2:1.4d
