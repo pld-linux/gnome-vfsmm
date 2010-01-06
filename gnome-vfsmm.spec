@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	doxygen
 BuildRequires:	glibmm-devel >= 2.14.0
 BuildRequires:	gnome-vfs2-devel >= 2.24.0
+BuildRequires:	graphviz
 BuildRequires:	libtool >= 2:1.4d
 BuildRequires:	pkgconfig
 Requires:	glibmm >= 2.14.0
