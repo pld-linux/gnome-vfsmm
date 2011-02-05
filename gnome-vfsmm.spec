@@ -1,12 +1,12 @@
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl.UTF-8):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
-Version:	2.24.0
+Version:	2.26.0
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.24/%{name}-%{version}.tar.bz2
-# Source0-md5:	f02257451583832c4d67f4accba7ad62
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.26/%{name}-%{version}.tar.bz2
+# Source0-md5:	d27d34b6a8722c557366729071c1baab
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -71,6 +71,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -86,7 +88,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libgnomevfsmm-2.6.so
-%{_libdir}/libgnomevfsmm-2.6.la
 %{_includedir}/%{name}-2.6
 %{_libdir}/%{name}-2.6
 %{_pkgconfigdir}/%{name}-2.6.pc
