@@ -2,7 +2,7 @@ Summary:	C++ wrappers for gnome-vfs
 Summary(pl.UTF-8):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
 Version:	2.26.0
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.26/%{name}-%{version}.tar.bz2
