@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	static_libs	# static library
+
 Summary:	C++ wrappers for gnome-vfs
 Summary(pl.UTF-8):	Interfejsy C++ dla gnome-vfs
 Name:		gnome-vfsmm
@@ -7,13 +11,14 @@ License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.26/%{name}-%{version}.tar.bz2
 # Source0-md5:	d27d34b6a8722c557366729071c1baab
-URL:		http://www.gnome.org/
+URL:		https://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	doxygen
 BuildRequires:	glibmm-devel >= 2.14.0
 BuildRequires:	gnome-vfs2-devel >= 2.24.0
 BuildRequires:	graphviz
+BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:1.4d
 BuildRequires:	pkgconfig
 Requires:	glibmm >= 2.14.0
@@ -61,7 +66,7 @@ Biblioteka statyczna gnome-vfsmm.
 %{__autoconf}
 %{__automake}
 %configure \
-	--enable-static=yes
+	%{?with_static_libs:--enable-static}
 
 %{__make}
 
@@ -88,10 +93,12 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libgnomevfsmm-2.6.so
-%{_includedir}/%{name}-2.6
-%{_libdir}/%{name}-2.6
-%{_pkgconfigdir}/%{name}-2.6.pc
+%{_includedir}/gnome-vfsmm-2.6
+%{_libdir}/gnome-vfsmm-2.6
+%{_pkgconfigdir}/gnome-vfsmm-2.6.pc
 
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/libgnomevfsmm-2.6.a
+%endif
